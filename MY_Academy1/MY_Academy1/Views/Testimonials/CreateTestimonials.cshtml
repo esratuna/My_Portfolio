@@ -1,0 +1,24 @@
+﻿@model MY_Academy1.Models.Tbl_Testimonials
+@{
+    ViewBag.Title = "CreateTestimonials";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>CreateTestimonials</h2>
+
+<form method="post">
+
+    <label>Ad-Soyad</label>
+    @Html.TextBoxFor(x => x.NameSurname, new { @class = "form-control" })
+    <br />
+    <label>Başlık</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    <label>Görsel</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+    <br />
+    <label>Mesaj</label>
+    @Html.TextBoxFor(x => x.Comment, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-outline-success">Kaydet</button>   
+</form>

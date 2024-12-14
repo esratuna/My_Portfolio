@@ -1,0 +1,38 @@
+﻿@model List<MY_Academy1.Models.Tbl_Experiances>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Deneyimlerim Sayfası</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Şirket Adı</th>
+        <th>Pozisyon</th>
+        <th>Başlangıç Tarihi</th>
+        <th>Bitiş Tarihi</th>
+        <th>Açıklama</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    
+    @foreach (var item in Model)
+    {
+        
+        <tr>
+            <td>@item.ExperianceId</td>
+            <td>@item.CompanyName</td>
+
+            <td>@item.Title</td>
+            <td>@item.StartDate</td>
+            <td>@(item.EndDate==null ?"Devam ediyor" : @item.EndDate)</td>
+            <td>@item.Description</td>
+            <td><a href="/Experiances/DeleteExperiances/@item.ExperianceId" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Experiances/UpdateExperiances/@item.ExperianceId" class="btn btn-outline-info">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<br />
+<a href="/Experiances/CreateExperiances/" class="btn btn-outline-success">Yeni Deneyim</a>

@@ -1,0 +1,55 @@
+﻿@model List<MY_Academy1.Models.Tbl_Educations>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+    int count = 0;
+}
+
+<h2>Aldığım Eğitimler</h2>
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>#</th>
+        <th>Okul Adı</th>
+
+        <th>Bölüm</th>
+        <th>Başlangıç Tarihi</th>
+        <th>Bitiş Tarihi</th>
+        <th>Derece</th>
+        <th>Açıklama</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count</td>
+            <td>@item.SchoolName</td>
+
+            <td>@item.Department</td>
+            <td>@item.StartDate</td>
+            @*<td>@item.EndDate</td>*@
+            <td>@(item.EndDate==null ?"Devam ediyor" : @item.EndDate)</td>
+            <td>@item.Degree</td>
+            <td>@item.Description</td>
+
+
+            <td><a href="/Education/DeleteEducation/@item.EducationId" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Education/UpdateEducation/@item.EducationId" class="btn btn-outline-info">Güncelle</a></td>
+
+            @*Eğitim bilgisi olmadığı zamanlarda çıkması için bi alert hazırla*@
+        </tr>
+
+
+
+    }
+
+
+
+</table>
+
+
+<br />
+<a href="/Education/CreateEducation" class="btn btn-outline-success">Ekle</a>
+

@@ -1,0 +1,20 @@
+﻿@model MY_Academy1.Models.Tbl_SocialsMedias
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+<form method="post">
+
+    <label>Platform Adı </label>
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <br />
+    <label>Url </label>
+    @Html.TextBoxFor(x => x.Url, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-outline-success">Save</button>
+
+</form>

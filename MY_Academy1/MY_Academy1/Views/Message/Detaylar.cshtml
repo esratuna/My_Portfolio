@@ -1,0 +1,30 @@
+﻿@model MY_Academy1.Models.Tbl_Messages
+@{
+    ViewBag.Title = "Detaylar";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Detaylar</h2>
+
+<table class="table table-responsive table-striped">
+    <tr>
+        <th>Name Surname:</th>
+        <td>@Model.Name</td>
+    </tr>
+
+    <tr>
+        <th>Email:</th>
+        <td>@Model.Email</td>
+    </tr>
+
+    <tr>
+        <th>Message:</th>
+        <td>@Model.MessageContent</td>
+    </tr>
+    <tr>
+        <th>Date:</th>
+        <td>@Model.DataSent</td>
+    </tr>
+</table>
+<br />
+<a href="/Message/Index" class="btn btn-outline-success">Geri Dön</a>

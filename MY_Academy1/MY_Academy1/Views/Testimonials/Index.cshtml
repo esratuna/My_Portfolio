@@ -1,0 +1,38 @@
+﻿@model List<MY_Academy1.Models.Tbl_Testimonials>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Ad Soyad</th>
+        <th>Başlık</th>
+        <th>Görsel</th>
+        <th>Yorum</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @{ int count = 0;}
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count</td>
+            <td>@item.NameSurname</td>
+            <td>@item.Title</td>
+            <td>@item.ImageUrl</td>
+            <td>@item.Comment</td>
+            <td><a href="/Testimonials/DeleteTestimonials/@item.TestimonalId" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Testimonials/UpdateTestimonials/@item.TestimonalId" class="btn btn-outline-info">Güncelle</a></td>
+
+
+        </tr>
+    }
+
+</table>
+<a href="/Testimonials/CreateTestimonials" class="btn btn-outline-success">Yeni Yorum Ekle</a>
+

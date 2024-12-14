@@ -1,0 +1,38 @@
+﻿@model List<MY_Academy1.Models.Tbl_SocialsMedias>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+    int count = 0;
+}
+
+
+<table class="table table-bordered table-hover">
+
+    <tr>
+        <th></th>
+        <th>Platform Adı</th>
+        <th>Url</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count </td>
+            <td>@item.Name </td>
+            <td> @item.Url</td>
+            <td> <a href="/SocialMedia/Delete/@item.SocialMediaId" class="btn btn-outline-danger">Sil</a> </td>
+            <td> <a href="/SocialMedia/Update/@item.SocialMediaId" class="btn btn-outline-info">Güncelle</a> </td>
+
+        </tr>
+
+    }
+
+
+</table>
+
+<br />
+<a href="/SocialMedia/Create" class="btn btn-outline-success">Ekle</a>

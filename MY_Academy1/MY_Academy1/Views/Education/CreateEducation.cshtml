@@ -1,0 +1,41 @@
+﻿@model MY_Academy1.Models.Tbl_Educations
+@{
+    ViewBag.Title = "CreateEducation";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>CreateEducation</h2>
+degries = [Önlisans,Lisans,Yüksek Lisans,Doktora];
+<form method="post">
+    <label> Okul Adı</label>
+    @Html.TextBoxFor(x => x.SchoolName, new { @class = "form-control" })
+    @*<p class="text-danger"> @Html.ValidationMessageFor(x => x.Name)</p>*@
+    <br />
+    <label> Bölüm</label>
+    @Html.TextBoxFor(x => x.Department, new { @class = "form-control" })
+    @*<p class="text-danger"> @Html.ValidationMessageFor(x => x.İmageUrl)</p>*@
+    <br />
+    <label> Başlangıç Tarihi</label>
+    @Html.TextBoxFor(x => x.StartDate, new { @class = "form-control bg-dark" })
+    @*<p class="text-danger"> @Html.ValidationMessageFor(x => x.CategoryId)</p>*@
+    <br />
+    <label> Bitiş Tarihi</label>
+    @Html.TextAreaFor(x => x.EndDate, new { @class = "form-control" })
+    @*<p class="text-danger"> @Html.ValidationMessageFor(x => x.Description)</p>*@
+    <br />
+    <label> Derece</label>
+    @Html.TextAreaFor(x => x.Degree, new { @class = "form-control" })
+    @*<select class="form-control  bg-dark">
+        <option disabled value="">Seçiminizi yapın</option>
+        <option value="Önlisans">Önlisans</option>
+        <option value="Lisans">Lisans</option>
+        <option value="Yüksek Lisans">Yüksek Lisans</option>
+    </select>*@
+    @*<p class="text-danger"> @Html.ValidationMessageFor(x => x.GithupUrl)</p>*@
+    <br />
+    <label> Açıklama (Not Ortalaması)</label>
+    @Html.TextAreaFor(x => x.Description, new { @class = "form-control" })
+
+    <button class="btn btn-outline-success">Ekle</button>
+
+</form>

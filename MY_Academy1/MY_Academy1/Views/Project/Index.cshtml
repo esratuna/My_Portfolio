@@ -1,0 +1,36 @@
+﻿@model List<MY_Academy1.Models.Tbl_Projects>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+    int count = 0;
+}
+
+<h2>Projelerim</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Proje Adı</th>
+        <th>Proje Açıklaması</th>
+        <th>Kategori</th>
+        <th>Githup Url</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+
+    @foreach(var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count</td>
+            <td><img src="@item.İmageUrl" style="width:50px;height:50px" alt="Proje Görseli" /> @item.Name</td>
+            
+            <td>@item.Description</td>
+            <td>@item.Tbl_Categories.CategoryName</td>
+            <td><a href="@item.GithupUrl" class="btn btn-outline-warning">Githup Linki</a></td>
+            <td><a href="/Project/DeleteProject/@item.ProjectId" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Project/UpdateProject/@item.ProjectId" class="btn btn-outline-info">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<br />
+<a href="/Project/CreateProject/" class="btn btn-outline-success">Yeni Proje</a>

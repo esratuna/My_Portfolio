@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Profil bilgileri güncelleme sayfası</h2>
+
+<form method="post" enctype="multipart/form-data">
+    <div class="text-center">
+        <label>Profil Resmi</label>
+        <img src="@Model.ImageUrl" style="width:75px;height:100px" alt="Profil Resmi"/>
+
+    </div>
+    <br /><br />
+    <label>Profil Resmi Yükleyin</label>
+    <input type="file" name="ImageFile"/>
+    <label>Ad</label>
+    <input type="text" name="Name" class="form-control" value="@Model.Name" />
+    <br />
+    <label>SoyAd</label>
+    <input type="text" name="Surname" class="form-control" value="@Model.Surname" />
+    <br />
+    <label>Email</label>
+    <input type="text" name="Email"  class="form-control" value="@Model.Email" />
+    <br />
+    <label>Şifreyi Girin</label>
+    <input type="password" name="Password" class="form-control"/>
+
+    <br />
+    <p style="color:red">@Html.ValidationSummary()</p>
+    <br />
+    <button class="btn btn-outline-primary">Bilgileri Güncelle</button>
+
+</form>

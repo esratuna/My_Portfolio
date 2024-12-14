@@ -1,0 +1,17 @@
+﻿@model List<MY_Academy1.Models.Tbl_Expertises>
+
+
+<div class="row about-expertise" data-animate-block>
+    <div class="column lg-12">
+
+        <h2 class="text-pretitle" data-animate-el>Uzmanlık Alanlarım</h2>
+
+        <ul class="skills-list h1" data-animate-el>
+            @foreach (var item in Model)
+            {
+                <li>@item.Title</li>
+            }
+        </ul>
+
+    </div>
+</div>

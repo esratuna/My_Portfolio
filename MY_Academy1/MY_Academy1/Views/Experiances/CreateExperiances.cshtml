@@ -1,0 +1,33 @@
+﻿@model MY_Academy1.Models.Tbl_Experiances
+@{
+    ViewBag.Title = "CreateExperiances";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>CreateExperiances</h2>
+
+<form method="post">
+    <label> Şirket Adı</label>
+    @Html.TextBoxFor(x => x.CompanyName, new { @class = "form-control" })
+    @*<p class="text-danger"> @Html.ValidationMessageFor(x => x.Name)</p>*@
+    <br />
+    <label> Pozisyon</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    @*<p class="text-danger"> @Html.ValidationMessageFor(x => x.İmageUrl)</p>*@
+    <br />
+    <label> Başlangıç Tarihi</label>
+    @Html.TextBoxFor(x => x.StartDate, new { @class = "form-control bg-dark" })
+    @*<p class="text-danger"> @Html.ValidationMessageFor(x => x.CategoryId)</p>*@
+    <br />
+    <label> Bitiş Tarihi</label>
+    @Html.TextAreaFor(x => x.EndDate, new { @class = "form-control" })
+    <br />
+    <label> Açıklama</label>
+    @Html.TextAreaFor(x => x.Description, 5, 1, new { @class = "form-control" })
+    @*<p class="text-danger"> @Html.ValidationMessageFor(x => x.Description)</p>*@
+    <br />
+
+
+    <button class="btn btn-outline-success">Ekle</button>
+
+</form>

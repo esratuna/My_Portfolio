@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Esrat\\Desktop\\MY_Academy1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C7B95F-C563-4292-8085-4B8CEB890E6A}|MY_Academy1\\MY_Academy1.csproj|c:\\users\\esrat\\desktop\\my_academy1\\my_academy1\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2C7B95F-C563-4292-8085-4B8CEB890E6A}|MY_Academy1\\MY_Academy1.csproj|solutionrelative:my_academy1\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C7B95F-C563-4292-8085-4B8CEB890E6A}|MY_Academy1\\MY_Academy1.csproj|c:\\users\\esrat\\desktop\\my_academy1\\my_academy1\\controllers\\adminlayoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C7B95F-C563-4292-8085-4B8CEB890E6A}|MY_Academy1\\MY_Academy1.csproj|solutionrelative:my_academy1\\controllers\\adminlayoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C7B95F-C563-4292-8085-4B8CEB890E6A}|MY_Academy1\\MY_Academy1.csproj|c:\\users\\esrat\\desktop\\my_academy1\\my_academy1\\views\\adminlayout\\adminlayoutnavbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2C7B95F-C563-4292-8085-4B8CEB890E6A}|MY_Academy1\\MY_Academy1.csproj|solutionrelative:my_academy1\\views\\adminlayout\\adminlayoutnavbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminLayoutController.cs",
+              "DocumentMoniker": "C:\\Users\\Esrat\\Desktop\\MY_Academy1\\MY_Academy1\\Controllers\\AdminLayoutController.cs",
+              "RelativeDocumentMoniker": "MY_Academy1\\Controllers\\AdminLayoutController.cs",
+              "ToolTip": "C:\\Users\\Esrat\\Desktop\\MY_Academy1\\MY_Academy1\\Controllers\\AdminLayoutController.cs",
+              "RelativeToolTip": "MY_Academy1\\Controllers\\AdminLayoutController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T20:09:07.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Esrat\\Desktop\\MY_Academy1\\MY_Academy1\\Views\\Default\\Index.cshtml",
+              "RelativeDocumentMoniker": "MY_Academy1\\Views\\Default\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Esrat\\Desktop\\MY_Academy1\\MY_Academy1\\Views\\Default\\Index.cshtml",
+              "RelativeToolTip": "MY_Academy1\\Views\\Default\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-14T20:06:24.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminLayoutNavbar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Esrat\\Desktop\\MY_Academy1\\MY_Academy1\\Views\\AdminLayout\\AdminLayoutNavbar.cshtml",
+              "RelativeDocumentMoniker": "MY_Academy1\\Views\\AdminLayout\\AdminLayoutNavbar.cshtml",
+              "ToolTip": "C:\\Users\\Esrat\\Desktop\\MY_Academy1\\MY_Academy1\\Views\\AdminLayout\\AdminLayoutNavbar.cshtml",
+              "RelativeToolTip": "MY_Academy1\\Views\\AdminLayout\\AdminLayoutNavbar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-14T20:04:13.599Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

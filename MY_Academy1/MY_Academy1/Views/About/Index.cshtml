@@ -1,0 +1,53 @@
+﻿@model List<MY_Academy1.Models.Tbl_Abouts>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Abouts</h2>
+<br />
+<table class="table table-bordered">
+
+    <tr>
+        <th>#</th>
+        <th>Fotoğraf Linki</th>
+        <th>Başlık</th>
+        <th>Açıklama</th>
+        <th>CV </th>
+        <th>Sil </th>
+        <th>Güncelle </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.AboutId</td>
+            <td><img src="@item.ImageUrl" style="width:50px;height:50px" alt="Profil Foto" /></td>
+            <td>@item.Title</td>
+            <td>@item.Description</td>
+            <td>
+                @if (string.IsNullOrEmpty(item.CvUrl))
+                {
+                    <span>CV Yüklenmedi</span>
+                }
+                else
+                {
+                    <span>CV Yüklendi</span>
+                }
+            </td>
+
+            
+            <td><a href="/About/Update/@item.AboutId" class="btn btn-outline-info">Güncelle</a></td>
+
+
+        </tr>
+    }
+
+
+
+
+</table>
+@*<div class="alert alert-info">@TempData["CategoryDeleteError"]</div>*@
+<br />
+

@@ -1,0 +1,40 @@
+﻿@model List<MY_Academy1.Models.Tbl_Expertises>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Uzmanlık Alanlarım</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Uzmanlık Alanı</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+        
+    </tr>
+    @{ 
+        int count = 0;
+    }
+    @foreach(var item in Model)
+            {
+        count++;
+                <tr>
+                    <td>@count</td>
+                    <td>@item.Title</td>
+                    <td><a href="/Expertise/DeleteExpertise/@item.ExpertiseId" class="btn btn-outline-danger">Sil</a></td>
+                    <td><a href="/Expertise/UpdateExpertise/@item.ExpertiseId" class="btn btn-outline-info">Güncelle</a></td>
+
+
+
+
+
+                </tr>
+            }
+
+
+
+</table>
+<a href="/Expertise/CreatExpertise" class="btn btn-outline-success">Yeni Uzmanlık Alanı Ekle</a>
+

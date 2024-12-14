@@ -1,0 +1,29 @@
+﻿@model MY_Academy1.Models.Tbl_Banners
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+<form method="post" enctype="multipart/form-data">
+
+
+    <br />
+
+    <div>
+        <label>Title</label>
+        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    </div>
+
+    <br />
+
+    <div>
+        <label>Description</label>
+        @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    </div>
+
+    
+    <br />
+    <button class="btn btn-outline-primary">Save</button>
+</form>

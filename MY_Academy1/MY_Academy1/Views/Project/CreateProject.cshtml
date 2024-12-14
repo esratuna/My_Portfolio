@@ -1,0 +1,34 @@
+﻿@model MY_Academy1.Models.Tbl_Projects
+@{
+    ViewBag.Title = "CreateProject";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>CreateProject</h2>
+
+<form method="post">
+    <label> Proje Adı</label>
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <p class="text-danger"> @Html.ValidationMessageFor(x => x.Name)</p>
+    <br />
+    <label> Görsel Url</label>
+    @Html.TextBoxFor(x => x.İmageUrl, new { @class = "form-control" })
+    <p class="text-danger"> @Html.ValidationMessageFor(x => x.İmageUrl)</p>
+    <br />
+    <label> Kategori</label>
+    @Html.DropDownListFor(x => x.CategoryId, (IEnumerable<SelectListItem>)ViewBag.categories,new { @class = "form-control bg-dark" })
+    <p class="text-danger"> @Html.ValidationMessageFor(x => x.CategoryId)</p>
+    <br />
+    <label> Description</label>
+    @Html.TextAreaFor(x => x.Description, 5,1, new { @class = "form-control" })
+    <p class="text-danger"> @Html.ValidationMessageFor(x => x.Description)</p>
+    <br />
+    <label> Githup Url</label>
+    @Html.TextBoxFor(x => x.GithupUrl, new { @class = "form-control" })
+    <p class="text-danger"> @Html.ValidationMessageFor(x => x.GithupUrl)</p>
+    <br />
+
+    <button class="btn btn-outline-success">Ekle</button>
+
+</form>
+

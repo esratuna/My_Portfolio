@@ -1,0 +1,25 @@
+﻿@model MY_Academy1.Models.Tbl_Contacts
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Update</h2>
+
+<form method="post" enctype="multipart/form-data">
+    @Html.HiddenFor(x => x.ContactId)
+
+    <div>
+        <label>Email</label>
+        @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+    </div>
+
+    <div>
+        <label>Phone</label>
+        @Html.TextBoxFor(x => x.Phone, new { @class = "form-control" })
+    </div>
+
+
+
+    <button class="btn btn-outline-primary">Save</button>
+</form>

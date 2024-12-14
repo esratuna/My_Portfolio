@@ -1,0 +1,53 @@
+﻿@model List<MY_Academy1.Models.Tbl_Educations>
+
+
+<d<div class="column lg-6 tab-12">
+
+    <h2 class="text-pretitle" data-animate-el>
+        Eğitim Hayatım
+    </h2>
+
+    <div class="timeline" data-animate-el>
+
+    @foreach (var item in Model)
+    {
+
+
+
+        <div class="timeline__block">
+            <div class="timeline__bullet"></div>
+            <div class="timeline__header">
+                <h4 class="timeline__title">
+                    @item.SchoolName
+                </h4>
+                <h5 class="timeline__meta">@item.Department</h5>
+                @*<p class="timeline__timeframe">@item.StartDate.ToShortDateString() - @(!item.EndDate.HasValue ? "Devam Ediyor" : item.EndDate?.ToString("d"))</p>*@
+            </div>
+            <div class="timeline__desc">
+                <p>@item.Description</p>
+            </div>
+        </div>
+
+    }
+
+       
+
+    </div> <!-- end timeline -->
+
+</div>
+
+
+
+
+@*<div class="timeline__block">
+    <div class="timeline__bullet"></div>
+    <div class="timeline__header">
+        <h4 class="timeline__title">
+            University of Life</h3>
+            <h5 class="timeline__meta">Master in Graphic Design</h5>
+            <p class="timeline__timeframe">April 2015</p>
+    </div>
+    <div class="timeline__desc">
+        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+    </div>
+</div>*@

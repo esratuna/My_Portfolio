@@ -1,0 +1,16 @@
+﻿@model List<MY_Academy1.Models.Tbl_SocialsMedias>
+
+
+    <ul class="intro-social">
+
+        @foreach (var item in Model)
+        {
+
+        <li><a href="@item.Url" target="_blank">@item.Name</a></li>
+        }
+    </ul>
+
+
+@*<li><a href="https://x.com/esratuna3600" target="_blank">Twitter</a></li>
+<li><a href="https://github.com/esratuna" target="_blank">Githup</a></li>
+<li><a href="https://www.instagram.com/arsee_sra/ " target="_blank">Instagram</a></li>*@

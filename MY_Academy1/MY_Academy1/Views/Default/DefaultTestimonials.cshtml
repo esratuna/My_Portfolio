@@ -1,0 +1,130 @@
+﻿@model List<MY_Academy1.Models.Tbl_Testimonials>
+
+<div class="row testimonials">
+    <div class="column lg-12" data-animate-block>
+
+        <div class="swiper-container testimonial-slider" data-animate-el>
+
+            <div class="swiper-wrapper">
+                @foreach (var item in Model)
+                {
+                    <div class="testimonial-slider__slide swiper-slide">
+                        <div class="testimonial-slider__author">
+                            <img src="@item.ImageUrl" alt="Author image" class="testimonial-slider__avatar">
+                            <cite class="testimonial-slider__cite">
+                                <strong>@item.NameSurname</strong>
+                                <span>@item.Title</span>
+                            </cite>
+                        </div>
+                        <p>
+                            @item.Comment
+                        </p>
+                    </div>
+
+                }
+                <!-- end testimonial-slider__slide -->
+                @*<div class="testimonial-slider__slide swiper-slide">*@
+                <!--<div class="testimonial-slider__author">
+                    <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonial-slider__avatar">
+                    <cite class="testimonial-slider__cite">
+                        <strong>Sundar Pichai</strong>
+                        <span>CEO, Google</span>
+                    </cite>
+                </div>
+                <p>
+                    Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                    Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
+                    Quasi voluptas eius distinctio. Atque eos maxime.
+                </p>-->
+                <!--</div>--> <!-- end testimonial-slider__slide -->
+                <!--<div class="testimonial-slider__slide swiper-slide">
+                    <div class="testimonial-slider__author">
+                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar">
+                        <cite class="testimonial-slider__cite">
+                            <strong>Satya Nadella</strong>
+                            <span>CEO, Microsoft</span>
+                        </cite>
+                    </div>
+                    <p>
+                        Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.
+                        Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
+                        Voluptatem dignissimos ut.
+                    </p>
+                </div>-->
+                <!-- end testimonial-slider__slide -->
+                <!--<div class="testimonial-slider__slide swiper-slide">
+                    <div class="testimonial-slider__author">
+                        <img src="images/avatars/user-06.jpg" alt="Author image" class="testimonial-slider__avatar">
+                        <cite class="testimonial-slider__cite">
+                            <strong>Jeff Bezos</strong>
+                            <span>CEO, Amazon</span>
+                        </cite>
+                    </div>
+                    <p>
+                        Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis
+                        quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti expedita voluptas odit.
+                        Nihil ea quia nesciunt. Ducimus aut sed ipsam.
+                    </p>
+                </div>-->
+                <!-- end testimonial-slider__slide -->
+
+
+            </div> <!-- end swiper-wrapper -->
+
+            <div class="swiper-pagination"></div>
+
+
+        </div> <!-- end swiper-container -->
+        @*<a href="#modal" class="folio-list__item-link btn btn-outline-info">Yorum Bırak</a>*@
+    </div> <!-- end column -->
+
+    
+        @*<div id="modal" hidden>
+            <div class="modal-popup">
+                
+
+                <div class="modal-popup__desc">
+                    <h5>Yorum Bırakın</h5>
+                    <br />
+                    <label>Ad Soyad</label>
+                    @Html.TextBoxFor(x => x.NameSurname, new { @class = "from-control" })
+                    <br />
+                    <label>Pozisyon</label>
+                    @Html.TextBoxFor(x => x.Title, new { @class = "from-control" })
+                    <br />
+                    <label>Mesaj</label>
+                    @Html.TextBoxFor(x => x.Comment, new { @class = "from-control" })
+                </div>
+
+                <button class="btn btn-outline-info">Kaydet</button>
+            </div>
+        </div>*@
+    
+
+
+    @*<div id="modal" hidden style="background-color:black">
+            <div class="modal-popup" style="background-color:black">
+
+
+                <div class="modal-popup__desc" style="background-color:black">
+                    <h5>Yorumunuzu Bırakın</h5>
+                    <br />
+                    <label>Ad-Soyad</label>
+                    <input type="text" name="NameSurname" class="form-control"/>
+                    <br />
+                    <label>Pozisyon</label>
+                    <input type="text" name="Title" class="form-control"/>
+                    <br />
+                    <label>Mesaj</label>
+                    <input type="text" name="Comment" class="form-control"/>
+                    <br />
+
+
+                    <button class="btn btn-outline-primary">Kaydet</button>
+
+                </div>
+
+
+            </div>
+        </div>*@
+</div>

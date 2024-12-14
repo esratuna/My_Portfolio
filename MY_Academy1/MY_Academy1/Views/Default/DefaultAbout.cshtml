@@ -1,0 +1,26 @@
+﻿@model List<MY_Academy1.Models.Tbl_Abouts>
+@foreach (var item in Model)
+{
+
+    <div class="row about-info wide" data-animate-block>
+
+        <div class="column lg-6 md-12 about-info__pic-block">
+            <img src="@item.ImageUrl"
+                 srcset="@item.ImageUrl, @item.ImageUrl" alt="" class="about-info__pic" data-animate-el>
+        </div>
+
+        <div class="column lg-6 md-12">
+            <div class="about-info__text">
+
+                <h2 class="text-pretitle with-line" data-animate-el>
+                    @item.Title
+                </h2>
+                <p class="attention-getter" data-animate-el>
+                   @item.Description
+                </p>
+                <a href="@item.CvUrl" class="btn btn--medium u-fullwidth " target="_blank" data-animate-el>CV</a>
+
+            </div>
+        </div>
+    </div>
+}

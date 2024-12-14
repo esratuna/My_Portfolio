@@ -1,0 +1,33 @@
+﻿@model MY_Academy1.Models.Tbl_Abouts
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Update</h2>
+
+<form method="post" enctype="multipart/form-data">
+    @Html.HiddenFor(x => x.AboutId)
+
+    <div>
+        <label>Title</label>
+        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    </div>
+
+    <div>
+        <label>Description</label>
+        @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    </div>
+
+    <div>
+        <label>Upload Image</label>
+        <input type="file" name="ImageFile" class="form-control" />
+    </div>
+
+    <div>
+        <label>Upload CV (PDF only)</label>
+        <input type="file" name="CvFile" accept=".pdf" class="form-control" />
+    </div>
+
+    <button class="btn btn-outline-primary">Save</button>
+</form>

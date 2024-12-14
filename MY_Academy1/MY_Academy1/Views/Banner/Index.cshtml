@@ -1,0 +1,43 @@
+﻿@model List<MY_Academy1.Models.Tbl_Banners>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+    int count = 0;
+}
+
+<h2>Index</h2>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-warning">
+        @TempData["Message"]
+    </div>
+}
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>#</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Is Shown</th>
+        <th>Action</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count </td>
+            <td>@item.Title</td>
+            <td>@item.Description </td>
+            <td>@item.IsShown</td>
+            <td>
+                <a href="/Banner/Show/@item.BannerId" class="btn btn-outline-warning">Show this banner</a>
+                <a href="/Banner/Delete/@item.BannerId" class="btn btn-outline-danger">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
+
+<br />
+<a href="/Banner/Create" class="btn btn-outline-success">Ekle</a>

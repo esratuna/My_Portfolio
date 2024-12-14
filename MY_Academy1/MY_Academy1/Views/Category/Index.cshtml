@@ -1,0 +1,38 @@
+﻿@model List<MY_Academy1.Models.Tbl_Categories>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Kategoriler</h2>
+<br />
+<table class="table table-bordered">
+
+    <tr>
+        <th>#</th>
+        <th>Kategori Ad</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CategoryId</td>
+            <td>@item.CategoryName</td>
+            <td><a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-outline-info">Güncelle</a></td>
+            
+
+        </tr>
+    }
+
+
+
+
+</table>
+<div class="alert alert-info">@TempData["CategoryDeleteError"]</div>
+<br />
+
+<a href="/Category/CreatCategory" class="btn btn-outline-success">Yeni Kategori Ekle</a>
