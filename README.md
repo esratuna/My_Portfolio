@@ -1,32 +1,32 @@
 # My_Portfolio
- Bu proje, hakkımda , eğitim , deneyimler , referanslarım , uzmanlık alanlarım , iletişim bilgilerim ve daha önce yaptığım projelere dair bilgi içeren kişisel bir portfolio projesidir
+ Bu proje, hakkımda , eğitim , deneyimler , referanslarım , uzmanlık alanlarım , iletişim bilgilerim ve daha önce yaptığım projelere dair bilgi içeren kişisel bir portfolio projesidir<br>
 
 
-Profilim sayfasında kişisel bilgilerini güncelleyebiliyor.
-Daha önce yapılan projelerde Crud işlemleri yapılabilir
-Eğitim bilgileri ve Deneyim bilgileri için Crud işlemleri yapılabilir
-Gönderilern mesajlar açılıp / okunabilir
-Sosyal medya hesabı eklenip / silinebilir
-Hakkımda alanında değişiklikler yapılabilir
-Proje kategorileri eklenip / silinebilir
-Admin panelinde yapılan işlemler Anasayfa da listelenir
-Ziyaretçiler mesaj gönderebilir
+Profilim sayfasında kişisel bilgilerini güncelleyebiliyor.<br>
+Daha önce yapılan projelerde Crud işlemleri yapılabilir<br>
+Eğitim bilgileri ve Deneyim bilgileri için Crud işlemleri yapılabilir<br>
+Gönderilern mesajlar açılıp / okunabilir<br>
+Sosyal medya hesabı eklenip / silinebilir<br>
+Hakkımda alanında değişiklikler yapılabilir<br>
+Proje kategorileri eklenip / silinebilir<br>
+Admin panelinde yapılan işlemler Anasayfa da listelenir<br>
+Ziyaretçiler mesaj gönderebilir<br>
 
 
 
 
-Proje Özellikleri
-Asp.Net Mvc5 ile geliştirildi.
-Veritabanı olarak MSSQL tercih edildi.
-Entity Framework ile DataBase First yaklaşımıyla geliştirildi.
-Oturum yönetimi Session ile gerçekleştirildi. Güvenlik için Authorize ve Authentication'lar kullanıldı.
-
-Kullanılan Teknolojiler
-DataBase First / EntityFramework
-Authentication / Authorize 
-MSSQL
-LINQ Sorguları
-Partial Views
+#Proje Özellikleri<br>
+Asp.Net Mvc5 ile geliştirildi.<br>
+Veritabanı olarak MSSQL tercih edildi.<br>
+Entity Framework ile DataBase First yaklaşımıyla geliştirildi.<br>
+Oturum yönetimi Session ile gerçekleştirildi. Güvenlik için Authorize ve Authentication'lar kullanıldı.<br>
+<br><br>
+#Kullanılan Teknolojiler<br>
+DataBase First / EntityFramework<br>
+Authentication / Authorize <br>
+MSSQL <br>
+LINQ Sorguları <br>
+Partial Views <br>
 
 
 Ekran Görüntüleri
